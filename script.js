@@ -123,7 +123,7 @@ window.addEventListener('scroll', scrollActive)
 //< ------------------Skills Section------------>
 
 const skills = [
-  { name: 'Java', category: 'Programming Languages' },
+  { name: 'Java', category: 'Programming Languages',  },
   { name: 'Python', category: 'Programming Languages' },
   { name: 'PowerShell', category: 'Scripting' },
   { name: 'Bash', category: 'Scripting' },

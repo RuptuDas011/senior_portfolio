@@ -928,7 +928,6 @@ footer{
     .col{
         display: flex;
         justify-content: center;
-        
         width: 100%;
     }
     .about-info, .exp-info{
