@@ -609,7 +609,6 @@ h3{
 .project-box label{
     font-size: 13px;
     padding: 10px;
-    
     color: #777;
 }
 .project-box::after, .exp-info::after ,.contact-info::after {
@@ -958,3 +957,59 @@ footer{
         width: 100%;
     }
 }
+
+
+/* ----- Achievement ----- */
+
+.achievements {
+    align-items: center;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+  }
+  
+  .achievement-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .achievement-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 280px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .achievement-item:hover {
+    background: var(--second-color);
+    transform: scale(1.05);
+  }
+  
+  .achievement-item p {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }

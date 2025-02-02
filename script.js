@@ -33,7 +33,7 @@ function myMenuFunction(){
 
 /* ----- TYPING EFFECT ----- */
  var typingEffect = new Typed(".typedText",{
-    strings : ["Cloud Azure Engineer","Devops Engineer"],
+    strings : [" Azure Engineer ","Devops Engineer"],
     loop : true,
     typeSpeed : 100, 
     backSpeed : 80,
@@ -234,4 +234,15 @@ window.addEventListener('resize', () => {
       slider.itemsPerView = 3;
   }
   slider.updateSlider();
+});
+
+
+// Achievement Section 
+
+window.addEventListener("DOMContentLoaded", () => {
+  const achievementItems = document.querySelectorAll(".achievement-item");
+  
+  achievementItems.forEach((item, index) => {
+    item.style.animationDelay = `${index * 0.5}s`; // Adds delay for each achievement for staggered animation effect
+  });
 });
